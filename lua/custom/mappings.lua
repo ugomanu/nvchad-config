@@ -13,6 +13,8 @@ M.general = {
     ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
     ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
     ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
+
+    ["<leader>ld"] = { "<cmd>Trouble<CR>", "Trouble diagnostics" },
   },
   i = {
     ["jk"] = { "<Esc>" },

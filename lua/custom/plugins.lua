@@ -35,6 +35,11 @@ local plugins = {
     "windwp/nvim-ts-autotag",
   },
 
+  {
+    "folke/trouble.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",
