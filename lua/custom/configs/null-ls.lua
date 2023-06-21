@@ -1,26 +1,26 @@
 local null_ls = require "null-ls"
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
-local b = null_ls.builtins
+local formatting = null_ls.builtins.formatting
 
 local opts = {
   sources = {
     -- webdev stuff
-    b.formatting.deno_fmt,
-    b.formatting.prettier.with {
+    formatting.deno_fmt,
+    formatting.prettier.with {
       filetypes = { "html", "markdown", "css" },
     },
 
     -- Lua
-    b.formatting.stylua,
+    formatting.stylua,
 
     -- Go
-    b.formatting.gofumpt,
-    b.formatting.goimports_reviser,
-    b.formatting.golines,
+    formatting.gofumpt,
+    formatting.goimports_reviser,
+    formatting.golines,
 
     -- Rust
-    b.formatting.rustfmt,
+    formatting.rustfmt,
   },
 
   on_attach = function(client, bufnr)

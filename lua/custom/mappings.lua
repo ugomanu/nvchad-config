@@ -39,9 +39,17 @@ M.lspconfig = {
   },
 }
 
+M.telescope = {
+  n = {
+    ["<leader>fg"] = { "<cmd>Telescope live_grep<CR>", "Live grep" },
+  },
+}
+
 M.disabled = {
-  ["<leader>ra"] = false,
-  ["<leader>ca"] = false,
+  n = {
+    ["<leader>ra"] = false,
+    ["<leader>ca"] = false,
+  },
 }
 
 return M

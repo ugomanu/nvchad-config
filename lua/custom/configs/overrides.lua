@@ -72,6 +72,14 @@ M.telescope = {
       },
     },
   },
+
+  extensions = {
+    ["ui-select"] = {
+      require("telescope.themes").get_dropdown {},
+    },
+  },
+
+  extensions_list = { "ui-select" },
 }
 
 return M

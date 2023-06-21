@@ -23,6 +23,14 @@ local plugins = {
     lazy = false,
   },
 
+  {
+    "BurntSushi/ripgrep",
+  },
+
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",
