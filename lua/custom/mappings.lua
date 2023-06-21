@@ -15,6 +15,8 @@ M.general = {
     ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
 
     ["<leader>ld"] = { "<cmd>Trouble<CR>", "Trouble diagnostics" },
+
+    ["<leader>we"] = { "<C-w>=", "Make windows even" },
   },
   i = {
     ["jk"] = { "<Esc>" },
