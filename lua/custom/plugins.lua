@@ -31,6 +31,10 @@ local plugins = {
     "nvim-telescope/telescope-ui-select.nvim",
   },
 
+  {
+    "windwp/nvim-ts-autotag",
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",

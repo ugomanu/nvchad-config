@@ -16,6 +16,9 @@ M.treesitter = {
   indent = {
     enable = true,
   },
+  autotag = {
+    enable = true,
+  },
 }
 
 M.mason = {
