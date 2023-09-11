@@ -13,7 +13,6 @@ local servers = {
   "svelte",
   "csharp_ls",
   "tailwindcss",
-  "denols",
 }
 
 for _, lsp in ipairs(servers) do
