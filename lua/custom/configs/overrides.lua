@@ -32,7 +32,7 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
-    "prettier",
+    "prettierd",
     "gopls",
     "rust-analyzer",
     "csharp-language-server",

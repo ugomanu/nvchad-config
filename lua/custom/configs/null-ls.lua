@@ -7,8 +7,9 @@ local opts = {
   sources = {
     -- webdev stuff
     formatting.deno_fmt,
-    formatting.prettier.with {
-      filetypes = { "html", "markdown", "css" },
+    formatting.prettierd.with {
+      filetypes = { "html", "markdown", "css", "svelte" },
+      extra_filetypes = { "svelte" },
     },
 
     -- Lua
@@ -29,13 +30,13 @@ local opts = {
         group = augroup,
         buffer = bufnr,
       }
-      vim.api.nvim_create_autocmd("BufWritePre", {
-        group = augroup,
-        buffer = bufnr,
-        callback = function()
-          vim.lsp.buf.format { bufnr = bufnr }
-        end,
-      })
+      -- vim.api.nvim_create_autocmd("BufWritePre", {
+      --   group = augroup,
+      --   buffer = bufnr,
+      --   callback = function()
+      --     vim.lsp.buf.format { bufnr = bufnr }
+      --   end,
+      -- })
     end
   end,
 }
