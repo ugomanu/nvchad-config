@@ -2,10 +2,10 @@
 local M = {}
 
 M.ui = {
-  theme = "catppuccin",
-  theme_toggle = { "catppuccin", "one_light" },
+  theme = "everforest",
+  theme_toggle = { "everforest", "one_light" },
 
-  transparency = true,
+  transparency = false,
 
   tabufline = {
     enabled = false,

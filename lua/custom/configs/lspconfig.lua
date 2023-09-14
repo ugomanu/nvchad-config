@@ -14,6 +14,7 @@ local servers = {
   "csharp_ls",
   "tailwindcss",
   "ocamllsp",
+  "gdscript",
 }
 
 for _, lsp in ipairs(servers) do

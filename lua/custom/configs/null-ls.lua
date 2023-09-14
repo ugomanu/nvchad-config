@@ -20,6 +20,9 @@ local opts = {
     formatting.goimports_reviser,
     formatting.golines,
 
+    -- ocaml
+    formatting.ocamlformat,
+
     -- Rust
     formatting.rustfmt,
   },
