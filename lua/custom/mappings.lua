@@ -17,6 +17,8 @@ M.general = {
     ["<leader>ld"] = { "<cmd>Trouble<CR>", "Trouble diagnostics" },
 
     ["<leader>we"] = { "<C-w>=", "Make windows even" },
+
+    ["<leader>ge"] = { "oif err != nil {<CR>return err<CR>}<Esc>" },
   },
   i = {
     ["jk"] = { "<Esc>" },
