@@ -15,6 +15,7 @@ local servers = {
   "tailwindcss",
   "ocamllsp",
   "gdscript",
+  "prismals"
 }
 
 for _, lsp in ipairs(servers) do
