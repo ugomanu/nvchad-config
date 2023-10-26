@@ -2,8 +2,8 @@
 local M = {}
 
 M.ui = {
-  theme = "everforest",
-  theme_toggle = { "everforest", "one_light" },
+  theme = "gruvbox",
+  theme_toggle = { "gruvbox", "one_light" },
 
   transparency = false,
 

@@ -38,6 +38,16 @@ local plugins = {
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    lazy = false,
+  },
+
+  {
+    "windwp/nvim-ts-autotag",
+  },
+
+  {
+    "tpope/vim-sleuth",
+    lazy = false,
   },
 
   -- override plugin configs
