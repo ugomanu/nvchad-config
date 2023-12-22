@@ -50,6 +50,9 @@ local plugins = {
     lazy = false,
   },
 
+  {
+    "aznhe21/actions-preview.nvim",
+  },
   -- override plugin configs
   {
     "williamboman/mason.nvim",
