@@ -53,6 +53,12 @@ local plugins = {
   {
     "aznhe21/actions-preview.nvim",
   },
+
+  {
+    "tpope/vim-fugitive",
+    lazy = false,
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",
