@@ -6,9 +6,7 @@ local formatting = null_ls.builtins.formatting
 local opts = {
   sources = {
     -- webdev stuff
-    formatting.deno_fmt,
-    formatting.prettierd.with {
-      filetypes = { "html", "markdown", "css", "svelte" },
+    formatting.prettier.with {
       extra_filetypes = { "svelte" },
     },
 
