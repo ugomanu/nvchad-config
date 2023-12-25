@@ -2,8 +2,7 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
-    "vim",
-    "lua",
+    "vim", "lua",
     "html",
     "css",
     "javascript",
@@ -40,8 +39,14 @@ M.mason = {
 
 -- git support in nvimtree
 M.nvimtree = {
+  filters = {
+    dotfiles = false,
+    custom = { ".git", "node_modules", ".svelte-kit" },
+  },
+
   git = {
     enable = true,
+    ignore = false,
   },
 
   renderer = {
