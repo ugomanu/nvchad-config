@@ -19,6 +19,7 @@ M.general = {
     ["<leader>we"] = { "<C-w>=", "Make windows even" },
 
     ["<leader>ge"] = { "oif err != nil {<CR>return err<CR>}<Esc>" },
+    ["<leader>rl"] = { "<cmd>silent !love . &<CR>" },
   },
   i = {
     ["jk"] = { "<Esc>" },

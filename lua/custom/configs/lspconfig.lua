@@ -7,7 +7,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
-  "tsserver",
+  "ts_ls",
   "gopls",
   "rust_analyzer",
   "svelte",
@@ -15,7 +15,8 @@ local servers = {
   "tailwindcss",
   "ocamllsp",
   "gdscript",
-  "prismals"
+  "luau_lsp",
+  "zls"
 }
 
 for _, lsp in ipairs(servers) do
