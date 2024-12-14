@@ -2,8 +2,8 @@
 local M = {}
 
 M.ui = {
-  theme = "nightowl",
-  theme_toggle = { "nightowl", "one_light" },
+  theme = "gruvchad",
+  theme_toggle = { "gruvchad", "one_light" },
 
   transparency = false,
 

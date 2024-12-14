@@ -59,6 +59,20 @@ local plugins = {
     lazy = false,
   },
 
+  {
+    "supermaven-inc/supermaven-nvim",
+    lazy = false,
+    config = function()
+      require("supermaven-nvim").setup({})
+    end,
+  },
+
+  {
+    "Decodetalkers/csharpls-extended-lsp.nvim",
+    config = function()
+    end,
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",

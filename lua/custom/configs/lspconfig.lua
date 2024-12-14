@@ -11,12 +11,13 @@ local servers = {
   "gopls",
   "rust_analyzer",
   "svelte",
-  "csharp_ls",
   "tailwindcss",
   "ocamllsp",
   "gdscript",
   "luau_lsp",
-  "zls"
+  "zls",
+  "ols",
+  "glsl_analyzer",
 }
 
 for _, lsp in ipairs(servers) do
@@ -25,3 +26,12 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig.csharp_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  handlers = {
+    ["textDocument/definition"] = require("csharpls_extended").handler,
+    ["textDocument/typeDefinition"] = require("csharpls_extended").handler,
+  },
+}
