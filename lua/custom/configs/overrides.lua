@@ -41,7 +41,7 @@ M.mason = {
 M.nvimtree = {
   filters = {
     dotfiles = false,
-    custom = { ".git", "node_modules", ".svelte-kit" },
+    custom = { ".git", "node_modules", ".svelte-kit", "bin", "obj", ".config" },
   },
 
   git = {
